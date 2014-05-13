@@ -1,0 +1,24 @@
+{
+  "name": "eert",
+  "version": "0.0.1",
+  "description": "Generates a directory structure based on a `tree` output",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tree",
+    "debug"
+  ],
+  "bin": {
+    "eert": "./index.js"
+  },
+  "preferGlobal": "true",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://rem.mit-license.org"
+    }
+  ],
+  "author": "Remy Sharp"
+}
