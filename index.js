@@ -22,8 +22,7 @@ process.stdin.on('data', function(chunk) {
 });
 
 process.stdin.on('end', function () {
-  var files = data.split('\n').slice(1).filter(isNode).map(
-    findName);
+  var files = data.split('\n').slice(1).filter(isNode).map(findName);
 
   try {
     fs.mkdirSync(dir);
@@ -71,7 +70,7 @@ function isNode(str) {
 }
 
 function findName(str) {
-  str = str.trim();
+  str = str.replace(/\s+$/g, '');
   var length = str.length;
 
   // following two tests should never actually match
