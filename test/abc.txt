@@ -1,0 +1,6 @@
+a
+└── b
+    └── c
+        └── d
+
+3 directories, 0 files
